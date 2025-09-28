@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Github, Linkedin, ArrowRight } from 'lucide-react'
+import { Github, Linkedin, ArrowRight, FileText } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
@@ -70,6 +70,20 @@ export default function Hero() {
               >
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a
+                href="/George-Adadi-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="inline-flex items-center"
+                aria-label="Download CV"
+                title="Download CV"
+              >
+                <FileText className="mr-2 h-5 w-5" />
+                CV
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
