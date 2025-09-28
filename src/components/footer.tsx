@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { FileText, Github, Linkedin, Mail } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
+import { Button } from './ui/button'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -32,6 +33,17 @@ export default function Footer() {
               aria-label="LinkedIn"
             >
               <Linkedin className="h-4 w-4" />
+            </Link>
+            <Link
+              href="/George-Adadi-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Download CV"
+              title="Download CV"
+            >
+              <FileText className="h-4 w-4" />
             </Link>
             <Link
               href={SITE.x}
