@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Mail, Github, Linkedin } from 'lucide-react'
+import { Mail, Github, Linkedin, FileText } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
@@ -61,6 +61,20 @@ export default function ContactCta() {
                 <a href={SITE.github} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a
+                  href="/George-Adadi-CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="inline-flex items-center"
+                  aria-label="Download CV"
+                  title="Download CV"
+                >
+                  <FileText className="h-5 w-5 shrink-0" />
+                  CV
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
