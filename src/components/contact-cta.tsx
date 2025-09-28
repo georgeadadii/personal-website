@@ -20,6 +20,7 @@ export default function ContactCta() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
+      whileHover={{ scale: 1.03 }}
     >
       <Card className="from-brand-50 to-brand-100 dark:from-brand-900/20 dark:to-brand-800/20 border-brand-200 dark:border-brand-800 bg-gradient-to-br">
         <CardHeader className="text-center">

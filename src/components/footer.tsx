@@ -17,7 +17,7 @@ export default function Footer() {
               href={SITE.sourceCode}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-1 text-blue-600 hover:text-blue-800"
+              className="ml-1 text-[#06b6d4] hover:text-[#06a4d4ff]"
             >
               View Code
             </a>
