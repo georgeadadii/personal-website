@@ -6,6 +6,7 @@ import SkillsCloud from '@/components/skills-cloud'
 import ContactCta from '@/components/contact-cta'
 import { PROJECTS } from '@/data/projects'
 import { EXPERIENCE } from '@/data/experience'
+import { VOLUNTEERING } from '@/data/volunteering'
 import { SKILLS } from '@/data/skills'
 
 export default function HomePage() {
@@ -32,6 +33,13 @@ export default function HomePage() {
         subtitle="Professional experience and internships"
       >
         <Timeline items={recentExperience} />
+      </Section>
+
+      <Section
+        title="Volunteering"
+        subtitle="Volunteering experience and student mentorship"
+      >
+        <Timeline items={VOLUNTEERING} />
       </Section>
 
       <Section title="Skills" subtitle="Technologies and tools I work with">

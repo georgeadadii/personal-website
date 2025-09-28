@@ -19,6 +19,14 @@ export type Experience = {
   bullets: string[]
 }
 
+export type Volunteering = {
+  org: string
+  role: string
+  start: string // "2025-06"
+  end?: string // "present" | "2025-09"
+  bullets: string[]
+}
+
 export type Skill = {
   name: string
   group:

@@ -12,8 +12,6 @@ export const PROJECTS: Project[] = [
       'Optimised portal throughput and latency; improved labeling workflow.',
     ],
     tech: ['TypeScript', 'Node.js', 'Azure Blob Storage', 'React'],
-    repo: '', // add later if public
-    link: '', // add demo if available
     featured: true,
   },
   {
@@ -27,8 +25,6 @@ export const PROJECTS: Project[] = [
       'Built interactive frontend in React/Next.js with emphasis on reliability & UX.',
     ],
     tech: ['Next.js', 'TypeScript', 'Tailwind', 'LLM (Gemini)'],
-    repo: '',
-    link: '',
     featured: true,
   },
 ]
