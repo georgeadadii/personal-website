@@ -19,7 +19,7 @@ export default function Hero() {
         >
           <div className="space-y-4">
             <h1 className="text-foreground text-4xl font-bold tracking-tight md:text-6xl">
-              {SITE.name}
+              George Adadi
             </h1>
             <p className="text-muted-foreground mx-auto max-w-3xl text-xl md:text-2xl">
               {SITE.title}

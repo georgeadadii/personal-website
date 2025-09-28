@@ -12,7 +12,15 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-8">
         <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
           <div className="text-muted-foreground text-sm">
-            © {currentYear} {SITE.name}. All rights reserved.
+            © {currentYear} {SITE.name}.
+            <a
+              href={SITE.sourceCode}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 text-blue-600 hover:text-blue-800"
+            >
+              View Code
+            </a>
           </div>
 
           <div className="flex items-center space-x-4">
