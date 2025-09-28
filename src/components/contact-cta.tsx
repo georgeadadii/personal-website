@@ -1,0 +1,71 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Mail, Github, Linkedin } from 'lucide-react'
+import { SITE } from '@/data/site'
+
+export default function ContactCta() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      <Card className="from-brand-50 to-brand-100 dark:from-brand-900/20 dark:to-brand-800/20 border-brand-200 dark:border-brand-800 bg-gradient-to-br">
+        <CardHeader className="text-center">
+          <CardTitle className="text-foreground text-2xl font-bold">
+            Let&apos;s Work Together
+          </CardTitle>
+          <CardDescription className="text-muted-foreground">
+            I&apos;m always interested in new opportunities and collaborations.
+          </CardDescription>
+        </CardHeader>
+
+        <CardContent className="space-y-6">
+          <div className="text-center">
+            <p className="text-muted-foreground mb-4">
+              Currently seeking Summer 2026 internships
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <Button asChild size="lg" className="group">
+              <a href={`mailto:${SITE.email}`}>
+                <Mail className="mr-2 h-4 w-4" />
+                Get in Touch
+              </a>
+            </Button>
+
+            <div className="flex gap-2">
+              <Button variant="outline" size="lg" asChild>
+                <a
+                  href={SITE.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="mr-2 h-4 w-4" />
+                  LinkedIn
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href={SITE.github} target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" />
+                  GitHub
+                </a>
+              </Button>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </motion.div>
+  )
+}

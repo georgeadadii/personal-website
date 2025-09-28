@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# George Adadi's Personal Website
 
-## Getting Started
+A modern, fast, and accessible personal website built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Theme**: next-themes (light/dark mode)
+- **Testing**: Vitest + Testing Library
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+src/
+├── app/                 # Next.js App Router pages
+│   ├── about/          # About page
+│   ├── projects/       # Projects page
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── components/         # Reusable UI components
+│   ├── ui/            # shadcn/ui components
+│   ├── header.tsx     # Navigation header
+│   ├── footer.tsx     # Site footer
+│   └── ...
+├── data/              # Static data and content
+│   ├── site.ts        # Site configuration
+│   ├── projects.ts    # Project data
+│   ├── experience.ts  # Work experience
+│   └── skills.ts      # Skills data
+├── lib/               # Utilities and helpers
+│   ├── types.ts       # TypeScript types
+│   ├── seo.ts         # SEO utilities
+│   └── utils.ts       # General utilities
+└── styles/            # Global styles
+    └── globals.css    # Tailwind CSS
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Content Management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To update the website content, edit the files in the `src/data/` directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **`site.ts`**: Personal information, contact details, social links
+- **`projects.ts`**: Project portfolio with descriptions, tech stack, links
+- **`experience.ts`**: Work experience and internships
+- **`skills.ts`**: Technical skills organized by category
 
-## Deploy on Vercel
+## 🎨 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Colors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The brand colors are defined in `tailwind.config.ts`. Update the `brand` color palette to match your preferences.
+
+### Fonts
+
+The site uses Inter (sans-serif) and JetBrains Mono (monospace) fonts. You can change these in `src/app/layout.tsx`.
+
+### Components
+
+All components are built with Tailwind CSS and can be easily customized by modifying the className props.
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Configure your domain in Vercel dashboard
+4. Deploy!
+
+### Domain Configuration
+
+For `georgeadadii.com`:
+
+- Set up A/ALIAS record for apex domain
+- Set up CNAME record for www subdomain
+- Follow Vercel's DNS configuration guide
+
+## 🧪 Testing
+
+```bash
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+```
+
+## 📊 Performance
+
+The site is optimized for:
+
+- **Lighthouse Score**: 95+ across all metrics
+- **Core Web Vitals**: Excellent LCP, FID, CLS
+- **Accessibility**: WCAG AA compliant
+- **SEO**: Structured data, meta tags, sitemap
+
+## 📄 License
+
+MIT License - feel free to use this template for your own personal website!
+
+## 🤝 Contributing
+
+This is a personal website, but if you spot any issues or have suggestions, feel free to open an issue or submit a pull request.
+
+---
+
+Built with ❤️ by George Adadi
