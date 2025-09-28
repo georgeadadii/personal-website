@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Mail, Github, Linkedin } from 'lucide-react'
+import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
 export default function ContactCta() {
@@ -23,10 +24,10 @@ export default function ContactCta() {
       <Card className="from-brand-50 to-brand-100 dark:from-brand-900/20 dark:to-brand-800/20 border-brand-200 dark:border-brand-800 bg-gradient-to-br">
         <CardHeader className="text-center">
           <CardTitle className="text-foreground text-2xl font-bold">
-            Let&apos;s Work Together
+            Let's Work Together
           </CardTitle>
           <CardDescription className="text-muted-foreground">
-            I&apos;m always interested in new opportunities and collaborations.
+            I'm always interested in new opportunities and collaborations.
           </CardDescription>
         </CardHeader>
 
@@ -60,6 +61,11 @@ export default function ContactCta() {
                 <a href={SITE.github} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
+                </a>
+              </Button>
+              <Button variant="outline" size="icon" asChild>
+                <a href={SITE.x} target="_blank" rel="noopener noreferrer">
+                  <FaXTwitter className="h-4 w-4" />
                 </a>
               </Button>
             </div>

@@ -24,7 +24,7 @@ export default function NotFound() {
           </CardHeader>
           <CardContent className="space-y-4 text-center">
             <p className="text-muted-foreground">
-              Sorry, we couldn&apos;t find the page you&apos;re looking for.
+              Sorry, we couldn't find the page you're looking for.
             </p>
             <div className="flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild>

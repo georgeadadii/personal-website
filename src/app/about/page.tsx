@@ -10,9 +10,9 @@ import {
 import { Badge } from '@/components/ui/badge'
 
 const achievements = [
-  'Entrance Exhibition Award — TCD',
   'Google AI Hackathon Dublin 2025 — 1st place',
-  'Rotman&apos;s International Trading Competition — 7th in Ireland',
+  "Rotman's International Trading Competition — 7th in Ireland",
+  'Entrance Exhibition Award — TCD',
   'Student of the Year ×6 with €2000 bonus',
   'S2S mentor (CS & Business) at TCD',
 ]
@@ -35,16 +35,16 @@ export default function AboutPage() {
         <Section>
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <p className="text-muted-foreground leading-relaxed">
-              I&apos;m a passionate software engineer studying Computer Science
-              and Business at Trinity College Dublin. I love building scalable
+              I'm a passionate software engineer studying Computer Science and
+              Business at Trinity College Dublin. I love building scalable
               applications and exploring the intersection of technology and
               business.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               My experience spans from backend development with Azure and
-              Node.js to frontend work with React and Next.js. I&apos;m
-              particularly interested in AI/ML applications and have worked on
-              projects involving image classification and LLM integration.
+              Node.js to frontend work with React and Next.js. I'm particularly
+              interested in AI/ML applications and have worked on projects
+              involving image classification and LLM integration.
             </p>
           </div>
         </Section>
@@ -55,7 +55,8 @@ export default function AboutPage() {
             <CardHeader>
               <CardTitle>Trinity College Dublin</CardTitle>
               <CardDescription>
-                Bachelor of Science in Computer Science and Business
+                Bachelor's in Computer Science and Business <br />
+                2023-2027 | Grade: 1.1
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -72,10 +73,10 @@ export default function AboutPage() {
         <Section title="Achievements">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {achievements.map((achievement, index) => (
-              <Card key={index}>
-                <CardContent className="pt-6">
-                  <div className="flex items-center space-x-2">
-                    <Badge variant="secondary" className="text-xs">
+              <Card key={index} className="h-24">
+                <CardContent className="flex h-full items-center justify-center">
+                  <div className="flex h-full items-center space-x-2">
+                    <Badge variant="secondary" className="h-8 text-xs">
                       Award
                     </Badge>
                     <p className="text-sm font-medium">{achievement}</p>
@@ -96,9 +97,9 @@ export default function AboutPage() {
                 AI/ML applications, and fintech.
               </p>
               <p className="text-muted-foreground mt-2 leading-relaxed">
-                When I&apos;m not coding, you can find me exploring
-                Dublin&apos;s tech scene, contributing to open source projects,
-                or working on side projects.
+                When I'm not coding, you can find me exploring Dublin's tech
+                scene, contributing to open source projects, or working on side
+                projects.
               </p>
             </CardContent>
           </Card>

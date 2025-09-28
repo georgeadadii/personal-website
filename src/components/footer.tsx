@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Github, Linkedin, Mail } from 'lucide-react'
+import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
 export default function Footer() {
@@ -31,6 +32,15 @@ export default function Footer() {
               aria-label="LinkedIn"
             >
               <Linkedin className="h-4 w-4" />
+            </Link>
+            <Link
+              href={SITE.x}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="X (Twitter)"
+            >
+              <FaXTwitter className="h-4 w-4" />
             </Link>
             <Link
               href={`mailto:${SITE.email}`}

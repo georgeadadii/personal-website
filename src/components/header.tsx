@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, Github, Linkedin } from 'lucide-react'
+import { FaXTwitter } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import ThemeToggle from './theme-toggle'
@@ -61,6 +62,16 @@ export default function Header() {
                   <Linkedin className="h-4 w-4" />
                 </a>
               </Button>
+              <Button variant="ghost" size="sm" asChild>
+                <a
+                  href={SITE.x}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                >
+                  <FaXTwitter className="h-4 w-4" />
+                </a>
+              </Button>
               <ThemeToggle />
             </div>
           </nav>
@@ -109,6 +120,16 @@ export default function Header() {
                       >
                         <Linkedin className="mr-2 h-4 w-4" />
                         LinkedIn
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="sm" asChild>
+                      <a
+                        href={SITE.x}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="X (Twitter)"
+                      >
+                        <FaXTwitter className="mr-2 h-4 w-4" />
                       </a>
                     </Button>
                   </div>

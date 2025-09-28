@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Github, Linkedin, ArrowRight } from 'lucide-react'
+import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
 export default function Hero() {
@@ -69,6 +70,16 @@ export default function Hero() {
               >
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a
+                href={SITE.x}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                <FaXTwitter className="h-4 w-4" />
               </a>
             </Button>
           </motion.div>

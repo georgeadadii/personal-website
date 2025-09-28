@@ -5,5 +5,5 @@ export const SITE = {
   email: 'georgeadadi7@gmail.com',
   github: 'https://github.com/georgeadadii',
   linkedin: 'https://www.linkedin.com/in/georgeadadii/',
-  x: '',
+  x: 'https://x.com/0xIGA175',
 }
