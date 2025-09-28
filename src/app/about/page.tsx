@@ -44,14 +44,14 @@ export default function AboutPage() {
           <Section>
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                I'm a passionate software engineer studying Computer Science and
-                Business at Trinity College Dublin. I love building scalable
-                applications and exploring the intersection of technology and
-                business.
+                I&apos;m a passionate software engineer studying Computer
+                Science and Business at Trinity College Dublin. I love building
+                scalable applications and exploring the intersection of
+                technology and business.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 My experience spans from backend development with Azure and
-                Node.js to frontend work with React and Next.js. I'm
+                Node.js to frontend work with React and Next.js. I&apos;m
                 particularly interested in AI/ML applications and have worked on
                 projects involving image classification and LLM integration.
               </p>
@@ -71,7 +71,7 @@ export default function AboutPage() {
               <CardHeader>
                 <CardTitle>Trinity College Dublin</CardTitle>
                 <CardDescription>
-                  Bachelor's in Computer Science and Business <br />
+                  Bachelor&apos;s in Computer Science and Business <br />
                   2023-2027 | Grade: 1.1
                 </CardDescription>
               </CardHeader>
@@ -133,9 +133,9 @@ export default function AboutPage() {
                   development, AI/ML applications, and fintech.
                 </p>
                 <p className="text-muted-foreground mt-2 leading-relaxed">
-                  When I'm not coding, you can find me exploring Dublin's tech
-                  scene, contributing to open source projects, or working on
-                  side projects.
+                  When I&apos;m not coding, you can find me exploring
+                  Dublin&apos;s tech scene, contributing to open source
+                  projects, or working on side projects.
                 </p>
               </CardContent>
             </Card>

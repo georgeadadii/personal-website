@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { FileText, Github, Linkedin, Mail } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
-import { Button } from './ui/button'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()

@@ -25,10 +25,10 @@ export default function ContactCta() {
       <Card className="from-brand-50 to-brand-100 dark:from-brand-900/20 dark:to-brand-800/20 border-brand-200 dark:border-brand-800 bg-gradient-to-br">
         <CardHeader className="text-center">
           <CardTitle className="text-foreground text-2xl font-bold">
-            Let's Work Together
+            Let&apos;s Work Together
           </CardTitle>
           <CardDescription className="text-muted-foreground">
-            I'm always interested in new opportunities and collaborations.
+            I&apos;m always interested in new opportunities and collaborations.
           </CardDescription>
         </CardHeader>
 
