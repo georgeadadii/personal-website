@@ -2,12 +2,13 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { Menu, Github, Linkedin } from 'lucide-react'
+import { Menu, Github, Linkedin, FileText } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import ThemeToggle from './theme-toggle'
 import { SITE } from '@/data/site'
+import { CardContent } from './ui/card'
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -60,6 +61,27 @@ export default function Header() {
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                className="group w-8 justify-start overflow-hidden px-2 transition-[width] duration-300 hover:w-18"
+              >
+                <a
+                  href="/George-Adadi-CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="inline-flex items-center"
+                  aria-label="Download CV"
+                  title="Download CV"
+                >
+                  <FileText className="h-5 w-5 shrink-0" />
+                  <span className="ml-2 whitespace-nowrap opacity-0 transition-all duration-300 group-hover:opacity-100">
+                    CV
+                  </span>
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
