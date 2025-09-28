@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Github, Linkedin, ArrowRight, FileText } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
+import AnimatedName from './ui/annimated-header'
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
         >
           <div className="space-y-4">
             <h1 className="text-foreground text-4xl font-bold tracking-tight md:text-6xl">
-              George Adadi
+              <AnimatedName /> Adadi
             </h1>
             <p className="text-muted-foreground mx-auto max-w-3xl text-xl md:text-2xl">
               {SITE.title}
