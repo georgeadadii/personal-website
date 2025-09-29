@@ -39,16 +39,21 @@ export default function ContactCta() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Button asChild size="lg" className="group">
+          <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
+            <Button asChild size="lg" className="group w-full sm:w-auto">
               <a href={`mailto:${SITE.email}`}>
                 <Mail className="mr-2 h-4 w-4" />
                 Get in Touch
               </a>
             </Button>
 
-            <div className="flex gap-2">
-              <Button variant="outline" size="lg" asChild>
+            <div className="flex w-full flex-wrap justify-center gap-2 sm:w-auto">
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                className="w-full sm:w-auto"
+              >
                 <a
                   href={SITE.linkedin}
                   target="_blank"
@@ -58,13 +63,23 @@ export default function ContactCta() {
                   LinkedIn
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                className="w-full sm:w-auto"
+              >
                 <a href={SITE.github} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                className="w-full sm:w-auto"
+              >
                 <a
                   href="/George-Adadi-CV.pdf"
                   target="_blank"
@@ -78,7 +93,12 @@ export default function ContactCta() {
                   CV
                 </a>
               </Button>
-              <Button variant="outline" size="icon" asChild>
+              <Button
+                variant="outline"
+                size="icon"
+                asChild
+                className="w-full sm:w-auto"
+              >
                 <a href={SITE.x} target="_blank" rel="noopener noreferrer">
                   <FaXTwitter className="h-4 w-4" />
                 </a>

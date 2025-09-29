@@ -4,6 +4,7 @@ import { useState } from 'react'
 import ProjectCard from '@/components/project-card'
 import { Badge } from '@/components/ui/badge'
 import { PROJECTS } from '@/data/projects'
+import { motion } from 'framer-motion'
 
 export default function ProjectsPage() {
   const [selectedTech, setSelectedTech] = useState<string>('All')
@@ -48,7 +49,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
           {filteredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}

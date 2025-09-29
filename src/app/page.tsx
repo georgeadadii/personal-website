@@ -1,3 +1,5 @@
+'use client'
+
 import Hero from '@/components/hero'
 import Section from '@/components/section'
 import ProjectCard from '@/components/project-card'
@@ -8,6 +10,7 @@ import { PROJECTS } from '@/data/projects'
 import { EXPERIENCE } from '@/data/experience'
 import { VOLUNTEERING } from '@/data/volunteering'
 import { SKILLS } from '@/data/skills'
+import { motion } from 'framer-motion'
 
 export default function HomePage() {
   const featuredProjects = PROJECTS.filter((project) => project.featured)

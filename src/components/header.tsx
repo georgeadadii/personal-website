@@ -5,7 +5,12 @@ import { useState } from 'react'
 import { Menu, Github, Linkedin, FileText } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet'
 import ThemeToggle from './theme-toggle'
 import { SITE } from '@/data/site'
 
@@ -107,6 +112,7 @@ export default function Header() {
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
+              <SheetTitle />
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <nav className="mt-8 flex flex-col space-y-4">
                   {navItems.map((item) => (
