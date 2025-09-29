@@ -9,7 +9,8 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Mail, Github, Linkedin, FileText } from 'lucide-react'
+import { Mail, FileText } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
@@ -59,7 +60,7 @@ export default function ContactCta() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className="mr-2 h-4 w-4" />
+                  <FaLinkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </a>
               </Button>
@@ -70,7 +71,7 @@ export default function ContactCta() {
                 className="w-full sm:w-auto"
               >
                 <a href={SITE.github} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" />
+                  <FaGithub className="mr-2 h-4 w-4" />
                   GitHub
                 </a>
               </Button>

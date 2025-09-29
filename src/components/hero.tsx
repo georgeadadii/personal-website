@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Github, Linkedin, ArrowRight, FileText } from 'lucide-react'
+import { ArrowRight, FileText } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 import AnimatedName from './ui/annimated-header'
@@ -58,7 +59,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <Github className="mr-2 h-5 w-5" />
+                <FaGithub className="mr-2 h-5 w-5" />
                 GitHub
               </a>
             </Button>
@@ -69,7 +70,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="mr-2 h-5 w-5" />
+                <FaLinkedin className="mr-2 h-5 w-5" />
                 LinkedIn
               </a>
             </Button>

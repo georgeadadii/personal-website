@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { FileText, Github, Linkedin, Mail } from 'lucide-react'
+import { FileText, Mail } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
@@ -30,7 +31,7 @@ export default function Footer() {
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="GitHub"
             >
-              <Github className="h-4 w-4" />
+              <FaGithub className="h-4 w-4" />
             </Link>
             <Link
               href={SITE.linkedin}
@@ -39,7 +40,7 @@ export default function Footer() {
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin className="h-4 w-4" />
+              <FaLinkedin className="h-4 w-4" />
             </Link>
             <Link
               href="/George-Adadi-CV.pdf"

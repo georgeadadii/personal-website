@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { Menu, Github, Linkedin, FileText } from 'lucide-react'
+import { Menu, FileText } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 import {
@@ -54,7 +55,7 @@ export default function Header() {
                   rel="noopener noreferrer"
                   aria-label="GitHub"
                 >
-                  <Github className="h-4 w-4" />
+                  <FaGithub className="h-4 w-4" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" asChild>
@@ -64,7 +65,7 @@ export default function Header() {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="h-4 w-4" />
+                  <FaLinkedin className="h-4 w-4" />
                 </a>
               </Button>
               <Button
@@ -133,7 +134,7 @@ export default function Header() {
                         rel="noopener noreferrer"
                         aria-label="GitHub"
                       >
-                        <Github className="mr-2 h-4 w-4" />
+                        <FaGithub className="mr-2 h-4 w-4" />
                         GitHub
                       </a>
                     </Button>
@@ -144,7 +145,7 @@ export default function Header() {
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
                       >
-                        <Linkedin className="mr-2 h-4 w-4" />
+                        <FaLinkedin className="mr-2 h-4 w-4" />
                         LinkedIn
                       </a>
                     </Button>
