@@ -84,10 +84,9 @@ export default function ContactCta() {
                   href="/George-Adadi-CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  download
                   className="inline-flex items-center"
-                  aria-label="Download CV"
-                  title="Download CV"
+                  aria-label="Open CV"
+                  title="Open CV"
                 >
                   <FileText className="h-5 w-5 shrink-0" />
                   CV

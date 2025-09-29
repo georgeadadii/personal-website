@@ -45,10 +45,9 @@ export default function Footer() {
               href="/George-Adadi-CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download
               className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Download CV"
-              title="Download CV"
+              aria-label="Open CV"
+              title="Open CV"
             >
               <FileText className="h-4 w-4" />
             </Link>

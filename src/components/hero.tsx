@@ -78,10 +78,9 @@ export default function Hero() {
                 href="/George-Adadi-CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                download
                 className="inline-flex items-center"
-                aria-label="Download CV"
-                title="Download CV"
+                aria-label="Open CV"
+                title="Open CV"
               >
                 <FileText className="mr-2 h-5 w-5" />
                 CV
