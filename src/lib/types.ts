@@ -9,6 +9,10 @@ export type Project = {
   link?: string
   image?: string
   featured?: boolean
+  overview?: string
+  challenges?: string[]
+  outcomes?: string[]
+  future?: string
 }
 
 export type Experience = {
