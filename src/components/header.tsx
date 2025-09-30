@@ -112,55 +112,109 @@ export default function Header() {
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetTitle />
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="mt-8 flex flex-col space-y-4">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="text-foreground hover:text-brand-500 text-lg font-medium transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              <SheetContent
+                side="right"
+                className="flex w-[300px] flex-col p-0 sm:w-[350px]"
+              >
+                <nav className="flex-1 px-6 py-8">
+                  <div className="flex flex-col space-y-1">
+                    {navItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="text-foreground hover:text-brand-500 hover:bg-brand-500/5 rounded-md px-4 py-3 text-lg font-semibold transition-all duration-200"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
 
-                  <div className="flex items-center space-x-4 border-t pt-4">
-                    <Button variant="ghost" size="sm" asChild>
-                      <a
-                        href={SITE.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub"
+                  <div className="border-muted/20 my-6 border-t" />
+
+                  <div className="space-y-2">
+                    <p className="text-muted-foreground mb-3 px-4 text-xs font-semibold tracking-wide uppercase">
+                      Connect
+                    </p>
+                    <div className="flex flex-col space-y-1">
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        asChild
+                        className="hover:text-brand-500 hover:bg-brand-500/5 h-auto justify-start px-4 py-3 transition-all"
                       >
-                        <FaGithub className="mr-2 h-4 w-4" />
-                        GitHub
-                      </a>
-                    </Button>
-                    <Button variant="ghost" size="sm" asChild>
-                      <a
-                        href={SITE.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn"
+                        <a
+                          href={SITE.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="GitHub"
+                        >
+                          <FaGithub className="mr-3 h-5 w-5" />
+                          <span className="text-base font-medium">GitHub</span>
+                        </a>
+                      </Button>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        asChild
+                        className="hover:text-brand-500 hover:bg-brand-500/5 h-auto justify-start px-4 py-3 transition-all"
                       >
-                        <FaLinkedin className="mr-2 h-4 w-4" />
-                        LinkedIn
-                      </a>
-                    </Button>
-                    <Button variant="ghost" size="sm" asChild>
-                      <a
-                        href={SITE.x}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="X (Twitter)"
+                        <a
+                          href={SITE.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="LinkedIn"
+                        >
+                          <FaLinkedin className="mr-3 h-5 w-5" />
+                          <span className="text-base font-medium">
+                            LinkedIn
+                          </span>
+                        </a>
+                      </Button>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        asChild
+                        className="hover:text-brand-500 hover:bg-brand-500/5 h-auto justify-start px-4 py-3 transition-all"
                       >
-                        <FaXTwitter className="mr-2 h-4 w-4" />
-                      </a>
-                    </Button>
+                        <a
+                          href={SITE.x}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="X (Twitter)"
+                        >
+                          <FaXTwitter className="mr-3 h-5 w-5" />
+                          <span className="text-base font-medium">
+                            X (Twitter)
+                          </span>
+                        </a>
+                      </Button>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        asChild
+                        className="hover:text-brand-500 hover:bg-brand-500/5 h-auto justify-start px-4 py-3 transition-all"
+                      >
+                        <a
+                          href="/George-Adadi-CV.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View CV"
+                        >
+                          <FileText className="mr-3 h-5 w-5" />
+                          <span className="text-base font-medium">View CV</span>
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </nav>
+
+                <div className="border-muted/20 border-t px-6 py-4">
+                  <p className="text-muted-foreground text-center text-xs">
+                    © 2025 {SITE.name}
+                  </p>
+                </div>
               </SheetContent>
             </Sheet>
           </div>
