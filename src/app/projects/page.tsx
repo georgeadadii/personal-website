@@ -4,7 +4,6 @@ import { useState } from 'react'
 import ProjectCard from '@/components/project-card'
 import { Badge } from '@/components/ui/badge'
 import { PROJECTS } from '@/data/projects'
-import { motion } from 'framer-motion'
 
 export default function ProjectsPage() {
   const [selectedTech, setSelectedTech] = useState<string>('All')

@@ -11,7 +11,6 @@ import {
 import { Button } from '@/components/ui/button'
 import { Mail, FileText } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
 import { SITE } from '@/data/site'
 
 export default function ContactCta() {
@@ -91,16 +90,6 @@ export default function ContactCta() {
                 >
                   <FileText className="h-5 w-5 shrink-0" />
                   CV
-                </a>
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                asChild
-                className="w-full sm:w-auto"
-              >
-                <a href={SITE.x} target="_blank" rel="noopener noreferrer">
-                  <FaXTwitter className="h-4 w-4" />
                 </a>
               </Button>
             </div>

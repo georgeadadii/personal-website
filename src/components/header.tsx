@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, FileText } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
@@ -88,16 +87,6 @@ export default function Header() {
                   </span>
                 </a>
               </Button>
-              <Button variant="ghost" size="sm" asChild>
-                <a
-                  href={SITE.x}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="X (Twitter)"
-                >
-                  <FaXTwitter className="h-4 w-4" />
-                </a>
-              </Button>
               <ThemeToggle />
             </div>
           </nav>
@@ -169,24 +158,6 @@ export default function Header() {
                           <FaLinkedin className="mr-3 h-5 w-5" />
                           <span className="text-base font-medium">
                             LinkedIn
-                          </span>
-                        </a>
-                      </Button>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        asChild
-                        className="hover:text-brand-500 hover:bg-brand-500/5 h-auto justify-start px-4 py-3 transition-all"
-                      >
-                        <a
-                          href={SITE.x}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label="X (Twitter)"
-                        >
-                          <FaXTwitter className="mr-3 h-5 w-5" />
-                          <span className="text-base font-medium">
-                            X (Twitter)
                           </span>
                         </a>
                       </Button>
