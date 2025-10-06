@@ -3,7 +3,7 @@ import { Project } from '@/lib/types'
 export const PROJECTS: Project[] = [
   {
     slug: 'sweng-tomra-ai-image-classification',
-    title: 'SWENG x TOMRA — AI Image Classification Engine',
+    title: 'SWENG x TOMRA - AI Image Classification Engine',
     year: '2025',
     description:
       'Backend lead for an image-classification web app used to refine recycling AI models.',
@@ -12,7 +12,7 @@ export const PROJECTS: Project[] = [
       'Optimised portal throughput and latency; improved labeling workflow.',
     ],
     tech: ['TypeScript', 'Node.js', 'Azure Blob Storage', 'React'],
-    featured: true,
+    featured: false,
 
     overview: `This project was developed in collaboration with TOMRA as part of our Software Engineering module. 
     The goal was to build a robust platform that supports recycling initiatives by improving TOMRA’s image classification models. 
@@ -31,14 +31,57 @@ export const PROJECTS: Project[] = [
     real-time model feedback, and integration with additional AI services for faster retraining cycles.`,
   },
   {
-    slug: 'dublinpad-ai',
-    title: 'DublinPad AI — Smart Accommodation Finder',
+    slug: 'solo-ai-chrome-extension',
+    title: 'Solo AI - Chrome Extension',
     year: '2025',
+    repo: 'https://github.com/georgeadadii/chrome-agent',
+    description:
+      'Lightweight AI Chrome Extension for summarising, explaining, and re-phrasing highlighted text directly in-browser.',
+    highlights: [
+      'Built custom side-panel UI with markdown-formatted AI responses.',
+      'Integrated context-menu actions for summarise, tone-change, explain, and key-point extraction.',
+      'Implemented local storage for chat history and preset management.',
+    ],
+    tech: [
+      'JavaScript',
+      'HTML/CSS',
+      'Chrome APIs',
+      'Manifest V3',
+      'GPT-4o-mini',
+    ],
+    featured: true,
+
+    overview: `Solo AI is a Chrome extension designed to bring a personal AI assistant directly into the browser. 
+  By highlighting any text on a webpage, users can instantly trigger AI functions such as summarisation, tone adjustment, 
+  explanation, or key-point extraction, all within a sleek side-panel interface, removing the need for switching tabs or apps.`,
+
+    challenges: [
+      'Navigating Chrome Manifest V3 restrictions and CSP (Content Security Policy) for dynamic script injection.',
+      'Rendering markdown safely inside the extension environment without remote scripts.',
+      'Ensuring a smooth UX with fade-in message animations and persistent chat history.',
+    ],
+
+    outcomes: [
+      'Developed a functional AI side-panel with multiple contextual tools and markdown support.',
+      'Created a clean, responsive design that integrates seamlessly with any webpage.',
+      'Established a framework for future “super-agent” capabilities using the new Chrome MCP standard.',
+    ],
+
+    future: `Planned updates include support for Notion/OneNote export, more advanced summarisation presets, 
+  and user authentication for multi-device sync. Long-term, the goal is to evolve Solo into a fully-fledged Chrome super-agent 
+  on the Chrome Extension Store.`,
+  },
+  {
+    slug: 'dublinpad-ai',
+    title: 'DublinPad AI - Smart Accommodation Finder',
+    year: '2025',
+    repo: 'https://github.com/georgeadadii/DublinPadAI',
+    link: 'https://9000-firebase-dublinpadai-1759789807315.cluster-fbfjltn375c6wqxlhoehbz44sk.cloudworkstations.dev/location-preferences?monospaceUid=626426',
     description:
       'Property recommendations using Gemini+Daft APIs with prompt engineering and interactive UI.',
     highlights: [
+      'Secured 1st place in Google AI Hackathon Dublin 2025.',
       'Implemented data ingestion & LLM prompts for curated suggestions.',
-      'Built interactive frontend in React/Next.js with emphasis on reliability & UX.',
     ],
     tech: ['Next.js', 'TypeScript', 'Tailwind', 'LLM (Gemini)'],
     featured: true,
