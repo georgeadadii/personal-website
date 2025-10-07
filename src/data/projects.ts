@@ -11,6 +11,7 @@ export const PROJECTS: Project[] = [
       'Designed & implemented upload pipeline to Azure Blob Storage; converted images to signed URIs for ML ingestion.',
       'Optimised portal throughput and latency; improved labeling workflow.',
     ],
+    repo: 'https://github.com/georgeadadii/SWENG-x-TOMRA',
     tech: ['TypeScript', 'Node.js', 'Azure Blob Storage', 'React'],
     featured: false,
 
