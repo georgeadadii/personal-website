@@ -103,4 +103,35 @@ export const PROJECTS: Project[] = [
     future: `Planned improvements include live integration with transport APIs to optimise by commute time, 
     and a “group search” feature for students looking to rent together.`,
   },
+  {
+    slug: 'email-automation',
+    title: 'Email Automation Script',
+    year: '2025',
+    repo: 'https://github.com/georgeadadii/email-automation',
+    description:
+      'Python-based tool for sending personalised bulk emails using dynamic templates and contact data sources.',
+    highlights: [
+      'Automated delivery of 60+ personalised emails from structured contact data.',
+      'Switched from Excel to JSON input for greater flexibility and cleaner data handling.',
+    ],
+    tech: ['Python', 'smtplib', 'JSON', 'HTML'],
+    featured: false,
+
+    overview: `This lightweight Python utility was created to automate outreach emails with small personal touches 
+  such as recipient names and university details. Initially built around Excel data sources, 
+  the project later evolved to support JSON inputs for better portability and script simplicity.`,
+
+    challenges: [
+      'Ensuring each message rendered correctly from the HTML template.',
+      'Managing personalisation safely while maintaining consistent formatting across recipients.',
+    ],
+
+    outcomes: [
+      'Successfully sent automated batches of emails with individualised content in minutes.',
+      'Reduced manual workload and improved accuracy compared to manual copy–paste workflows.',
+    ],
+
+    future: `Planned improvements include adding Tally webhook integration to trigger automatic thank-you emails 
+  and a dashboard for monitoring sent messages and delivery status.`,
+  },
 ]
