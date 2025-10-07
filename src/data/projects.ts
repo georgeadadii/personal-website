@@ -77,7 +77,7 @@ export const PROJECTS: Project[] = [
     title: 'DublinPad AI - Smart Accommodation Finder',
     year: '2025',
     repo: 'https://github.com/georgeadadii/DublinPadAI',
-    link: 'https://9000-firebase-dublinpadai-1759789807315.cluster-fbfjltn375c6wqxlhoehbz44sk.cloudworkstations.dev/location-preferences?monospaceUid=626426',
+    link: 'https://dublin-pad-ai.vercel.app/',
     description:
       'Property recommendations using Gemini+Daft APIs with prompt engineering and interactive UI.',
     highlights: [
