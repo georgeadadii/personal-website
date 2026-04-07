@@ -134,4 +134,33 @@ export const PROJECTS: Project[] = [
     future: `Planned improvements include adding Tally webhook integration to trigger automatic thank-you emails 
   and a dashboard for monitoring sent messages and delivery status.`,
   },
+  {
+    slug: 'sweng-dell-realtime-user-context-engine',
+    title: 'SWENG x Dell - Real-Time User Context Engine',
+    year: '2026',
+    description:
+      'Event-driven engine for real-time user behaviour analysis and personalised recommendations.',
+    highlights: [
+      'Built Kafka-based pipeline for capturing live user events.',
+      'Implemented persona clustering for real-time recommendations.',
+      'Integrated monitoring with Prometheus and Grafana.',
+    ],
+    repo: 'https://github.com/georgeadadii/SWENG-x-DELL',
+    tech: ['Next.js', 'TypeScript', 'FastAPI', 'Kafka', 'Redis', 'PostgreSQL'],
+    featured: false,
+
+    overview: `Developed with Dell as part of our Software Engineering module, this project focused on building a real-time user context engine that transforms live interaction data into personalised user experiences.`,
+
+    challenges: [
+      'Handling high-frequency user event streams efficiently.',
+      'Balancing latency with real-time processing requirements.',
+    ],
+
+    outcomes: [
+      'Delivered a working real-time personalisation prototype.',
+      'Improved user journey efficiency through better recommendations.',
+    ],
+
+    future: `Future developments would make this project pluggable into any e-commerce platform, with enhanced ML-driven persona clustering and expanded event types for better user context.`,
+  },
 ]
