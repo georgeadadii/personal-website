@@ -14,11 +14,16 @@ export default function ProjectsPage() {
   )
   const techOptions = ['All', ...allTechs]
 
+  // Sort projects by year (desc)
+  const sortedProjects = [...PROJECTS].sort(
+    (a, b) => Number(b.year) - Number(a.year)
+  )
+
   // Filter projects based on selected technology
   const filteredProjects =
     selectedTech === 'All'
-      ? PROJECTS
-      : PROJECTS.filter((project) => project.tech.includes(selectedTech))
+      ? sortedProjects
+      : sortedProjects.filter((project) => project.tech.includes(selectedTech))
 
   return (
     <div className="py-16">
