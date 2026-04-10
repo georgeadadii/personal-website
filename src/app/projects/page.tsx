@@ -14,10 +14,12 @@ export default function ProjectsPage() {
   )
   const techOptions = ['All', ...allTechs]
 
-  // Sort projects by year (desc)
-  const sortedProjects = [...PROJECTS].sort(
-    (a, b) => Number(b.year) - Number(a.year)
-  )
+  // Sort projects with featured first, then by year (desc)
+  const sortedProjects = [...PROJECTS].sort((a, b) => {
+    const featuredDiff = Number(b.featured) - Number(a.featured)
+    if (featuredDiff !== 0) return featuredDiff
+    return Number(b.year) - Number(a.year)
+  })
 
   // Filter projects based on selected technology
   const filteredProjects =
