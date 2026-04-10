@@ -163,4 +163,39 @@ export const PROJECTS: Project[] = [
 
     future: `Future developments would make this project pluggable into any e-commerce platform, with enhanced ML-driven persona clustering and expanded event types for better user context.`,
   },
+  {
+    slug: 'triageai-hackathon-2026',
+    title: 'TriageAI - AI Patient Triage System',
+    year: '2026',
+    description:
+      'AI-assisted triage system enabling real-time patient intake, clinician decisions, and appointment updates.',
+    highlights: [
+      'Built contract-driven monorepo with Next.js dashboard, Expo mobile app, and shared TypeScript packages.',
+      'Implemented end-to-end triage flow from patient survey → backend analysis → clinician approval → appointment update.',
+      'Designed real-time event pipeline for live dashboard updates during triage processing.',
+    ],
+    repo: 'https://github.com/r-m-schulz/claude_hackathon_2026',
+    link: 'https://claude-hackathon-2026-web.vercel.app/',
+    tech: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'WebSockets'],
+    featured: false,
+
+    overview: `TriageAI is an end-to-end AI-assisted patient triage system built for the Claude Hackathon 2026. 
+  The platform connects a patient-facing mobile app with a clinician dashboard and backend services, enabling 
+  real-time triage decisions based on structured patient input. The system is built as a contract-driven monorepo, 
+  ensuring consistency across web, mobile, and backend layers.`,
+
+    challenges: [
+      'Maintaining strict consistency across shared contracts between web, mobile, and backend services.',
+      'Implementing a database-first architecture with schema and RLS aligned to system specifications.',
+    ],
+
+    outcomes: [
+      'Delivered a complete MVP demonstrating the full triage lifecycle from intake to clinician action.',
+      'Enabled real-time visibility of patient triage events within the clinician dashboard.',
+      'Established a scalable monorepo foundation for future expansion and production readiness.',
+    ],
+
+    future: `Future iterations will focus on refining AI decision logic, formalising API contracts, 
+  and introducing observability, deployment pipelines, and production-grade infrastructure.`,
+  },
 ]
