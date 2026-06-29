@@ -5,7 +5,7 @@ export function generatePersonJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: SITE.name,
-    url: 'https://www.georgeadadii.com',
+    url: 'https://www.georgeadadi.com',
     sameAs: [SITE.github, SITE.linkedin],
     jobTitle: 'Software Engineer',
     worksFor: {

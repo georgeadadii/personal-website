@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.georgeadadii.com/sitemap.xml
+Sitemap: https://www.georgeadadi.com/sitemap.xml

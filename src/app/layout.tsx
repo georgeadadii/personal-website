@@ -12,14 +12,14 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://www.georgeadadii.com'),
+  metadataBase: new URL('https://www.georgeadadi.com'),
   title: 'George Adadi — Software Engineer',
   description:
     'Personal website of George Adadi, CS & Business @ TCD. Projects, experience, and contact.',
   openGraph: {
     title: 'George Adadi',
     description: 'Software engineering projects & experience.',
-    url: 'https://www.georgeadadii.com',
+    url: 'https://www.georgeadadi.com',
     siteName: 'George Adadi',
     locale: 'en_IE',
     type: 'website',
