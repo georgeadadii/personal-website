@@ -2,6 +2,96 @@ import { Project } from '@/lib/types'
 
 export const PROJECTS: Project[] = [
   {
+    slug: 'uniportal',
+    title: 'UniPortal — Erasmus University Research Platform',
+    year: '2026',
+    link: 'https://uniportal.io/',
+    description:
+      'A group-built platform helping Erasmus students research partner universities, compare academic options, save shortlists, and manage their exchange journey.',
+    highlights: [
+      'Co-founded and developed UniPortal as part of a collaborative team.',
+      'Built full-stack features across institution search, profiles, authentication, saved universities, shareable shortlists, checklists, recommendations, and deadline notifications.',
+      'Contributed to the Prisma/PostgreSQL data model, Next.js application, automated tests, deployment infrastructure, privacy controls, analytics, and production monitoring.',
+    ],
+    tech: [
+      'Next.js 16',
+      'TypeScript',
+      'PostgreSQL',
+      'Prisma',
+      'Supabase',
+      'Playwright',
+      'Vitest',
+      'Docker',
+      'GitHub Actions',
+    ],
+    featured: true,
+    overview:
+      'Status: Active development. Full-stack co-founder working across product development, frontend, backend, database architecture, testing, and production infrastructure.',
+  },
+  {
+    slug: 'atmos',
+    title: 'Atmos — Weather-Aware Travel Planner',
+    year: '2026',
+    repo: 'https://github.com/georgeadadii/atmos',
+    description:
+      'A weather-aware travel planner that creates three-day itineraries around forecasts, air quality, destination ambiguity, and user-selected activities.',
+    highlights: [
+      'Combined OpenWeather forecasts and Google Places results with server-side destination resolution and activity scoring.',
+      'Added packing recommendations, air-quality warnings, forecast charts, and weather-suitability explanations.',
+      'Tested the Express API, itinerary scheduler, weather processing, and frontend utilities with Node’s built-in test runner.',
+    ],
+    tech: [
+      'Vue 3',
+      'JavaScript',
+      'Node.js',
+      'Express',
+      'OpenWeather',
+      'Google Places',
+    ],
+    featured: true,
+  },
+  {
+    slug: 'ascensus',
+    title: 'Ascensus — Personal Fitness Dashboard',
+    year: '2026',
+    repo: 'https://github.com/georgeadadii/Ascensus',
+    description:
+      'A full-stack fitness platform for tracking workouts, personal records, nutrition, meals, body measurements, and long-term progress.',
+    highlights: [
+      'Built reusable workout templates, live training sessions, weekly-volume summaries, and personal-record tracking.',
+      'Implemented nutrition logging for calories, macros, hydration, meals, and configurable goals.',
+      'Added Better Auth and a Prisma-backed PostgreSQL model for user-scoped fitness data.',
+    ],
+    tech: [
+      'Next.js 16',
+      'TypeScript',
+      'PostgreSQL',
+      'Prisma',
+      'Better Auth',
+      'Recharts',
+    ],
+    featured: false,
+    overview:
+      'Status: In development. Current work covers workout templates, live training sessions, nutrition logging, authentication, and user-scoped fitness data.',
+  },
+  {
+    slug: 'redscreen',
+    title: 'RedScreen — Privacy-First Screenshot Redaction for macOS',
+    year: '2026',
+    repo: 'https://github.com/georgeadadii/RedScreen',
+    description:
+      'A privacy-first native macOS menu-bar application being developed to permanently redact sensitive information from screenshots without sending image data off-device.',
+    highlights: [
+      'Established a SwiftUI/AppKit menu-bar application and framework-independent processing core.',
+      'Designed service boundaries for image import, OCR, sensitive-information detection, redaction, and export.',
+      'Implemented a secure in-memory image lifecycle, privacy-safe logging, sandboxing, and automated unit and UI tests.',
+    ],
+    tech: ['Swift 6', 'SwiftUI', 'AppKit', 'XCTest', 'XCUITest'],
+    featured: false,
+    overview:
+      'Status: In development. The application shell, processing architecture, security controls, and test foundations are implemented. Screenshot capture, OCR, sensitive-information detection, redaction rendering, and export remain planned functionality.',
+  },
+  {
     slug: 'sweng-tomra-ai-image-classification',
     title: 'SWENG x TOMRA - AI Image Classification Engine',
     year: '2025',
@@ -50,7 +140,7 @@ export const PROJECTS: Project[] = [
       'Manifest V3',
       'GPT-4o-mini',
     ],
-    featured: true,
+    featured: false,
 
     overview: `Solo AI is a Chrome extension designed to bring a personal AI assistant directly into the browser. 
   By highlighting any text on a webpage, users can instantly trigger AI functions such as summarisation, tone adjustment, 
@@ -85,7 +175,7 @@ export const PROJECTS: Project[] = [
       'Implemented data ingestion & LLM prompts for curated suggestions.',
     ],
     tech: ['Next.js', 'TypeScript', 'Tailwind', 'LLM (Gemini)'],
-    featured: true,
+    featured: false,
 
     overview: `DublinPad AI is a smart property-finding application designed to simplify student and professional housing searches. 
     By combining Daft’s property listings with Gemini’s natural language reasoning, the system provides tailored recommendations 

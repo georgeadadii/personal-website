@@ -29,6 +29,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const linkLabel = project.repo ? 'Demo' : 'Live Site'
   const [isHovered, setIsHovered] = useState(false)
   const cardRef = useRef<HTMLDivElement | null>(null)
   const isInView = useInView(cardRef, {
@@ -139,7 +140,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         rel="noopener noreferrer"
                       >
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
+                        {linkLabel}
                       </a>
                     </Button>
                   )}
@@ -250,7 +251,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   onClick={(e) => e.stopPropagation()}
                 >
                   <ExternalLink className="mr-2 h-4 w-4" />
-                  Demo
+                  {linkLabel}
                 </a>
               </Button>
             )}
