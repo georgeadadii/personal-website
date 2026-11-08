@@ -166,8 +166,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="space-y-6 pt-4">
           {project.overview && (
             <div>
-              <p className="text-muted-foreground leading-7">
-                {project.overview}
+              <p className="text-muted-foreground leading-7 whitespace-pre-line">
+                {project.overview.replace(/\s+/g, ' ').replace(/\\n/g, '\n')}
               </p>
             </div>
           )}
