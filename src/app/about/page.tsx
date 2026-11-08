@@ -13,9 +13,9 @@ import {
 import { Badge } from '@/components/ui/badge'
 
 const achievements = [
-  'Google AI Hackathon Dublin 2025 — 1st place',
-  "Rotman's International Trading Competition — 7th in Ireland",
-  'Entrance Exhibition Award — TCD',
+  'Google AI Hackathon Dublin 2025: 1st place',
+  "Rotman's International Trading Competition: 7th in Ireland",
+  'Entrance Exhibition Award TCD',
   'Student of the Year ×6 with €2000 bonus',
   'S2S mentor (CS & Business) at TCD',
 ]
@@ -42,19 +42,55 @@ export default function AboutPage() {
           className="space-y-8 text-left"
         >
           <Section>
-            <div className="prose prose-lg dark:prose-invert max-w-none">
-              <p className="text-muted-foreground leading-relaxed">
-                I&apos;m a passionate software engineer studying Computer
-                Science and Business at Trinity College Dublin. I love building
-                scalable applications and exploring the intersection of
-                technology and business.
+            <div className="text-muted-foreground mx-auto max-w-2xl space-y-10 text-lg leading-8">
+              <p className="text-foreground text-xl leading-relaxed sm:text-2xl">
+                I&apos;m a final-year Computer Science and Business student at
+                Trinity College Dublin, with a strong interest in software
+                engineering, artificial intelligence and entrepreneurship.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                My experience spans from backend development with Azure and
-                Node.js to frontend work with React and Next.js. I&apos;m
-                particularly interested in AI/ML applications and have worked on
-                projects involving image classification and LLM integration.
-              </p>
+              <div className="space-y-6">
+                <h2 className="text-foreground text-xl font-semibold tracking-tight">
+                  What I’m building
+                </h2>
+                <p>
+                  I&apos;m a co-founder of{' '}
+                  <strong className="text-foreground font-semibold">
+                    UniPortal
+                  </strong>
+                  , a platform helping Erasmus students discover, compare and
+                  plan their university exchanges. I&apos;ve also completed two
+                  Software and AI internships at{' '}
+                  <strong className="text-foreground font-semibold">
+                    TOMRA
+                  </strong>
+                  , gaining experience across backend development, automated
+                  testing and MLOps.
+                </p>
+                <p>
+                  Beyond my professional experience, I enjoy turning ideas into
+                  working products. I was part of the team that won the{' '}
+                  <strong className="text-foreground font-semibold">
+                    2025 Google AI Hackathon in Dublin
+                  </strong>{' '}
+                  with DublinPad AI, and I&apos;m continually exploring new
+                  opportunities to build technology that solves real-world
+                  problems.
+                </p>
+              </div>
+              <div className="space-y-6">
+                <h2 className="text-foreground text-xl font-semibold tracking-tight">
+                  Outside of work
+                </h2>
+                <p>
+                  Outside of technology, I&apos;m passionate about fitness and
+                  enjoy spending time in the gym, constantly challenging myself
+                  and working towards new goals. I&apos;m also a keen car
+                  enthusiast, with an interest in everything from automotive
+                  engineering to performance cars. I enjoy travelling,
+                  discovering new places and experiences, and finding
+                  opportunities to learn something new along the way.
+                </p>
+              </div>
             </div>
           </Section>
         </motion.div>
@@ -117,33 +153,13 @@ export default function AboutPage() {
           </div>
         </Section>
 
-        {/* Now Section */}
-        <Section title="Now">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <Card className="from-brand-50 to-brand-100 dark:from-brand-900/20 dark:to-brand-800/20 border-brand-200 dark:border-brand-800 bg-gradient-to-br">
-              <CardContent className="pt-0">
-                <p className="text-muted-foreground leading-relaxed">
-                  Currently seeking Summer 2026 internships in software
-                  engineering, with particular interest in full-stack
-                  development, AI/ML applications, and fintech.
-                </p>
-                <p className="text-muted-foreground mt-2 leading-relaxed">
-                  When I&apos;m not coding, you can find me exploring
-                  Dublin&apos;s tech scene, contributing to open source
-                  projects, or working on side projects.
-                </p>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </Section>
-
         {/* Contact CTA */}
         <Section>
+          <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-center text-lg leading-relaxed">
+            Currently seeking Summer 2027 internships in software engineering,
+            with particular interest in full-stack development, AI/ML
+            applications, and fintech.
+          </p>
           <ContactCta />
         </Section>
       </div>
