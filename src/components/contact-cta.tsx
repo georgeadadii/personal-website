@@ -35,7 +35,7 @@ export default function ContactCta() {
         <CardContent className="space-y-6">
           <div className="text-center">
             <p className="text-muted-foreground mb-4">
-              Currently seeking Summer 2026 internships
+              Currently seeking Summer 2027 internships
             </p>
           </div>
 

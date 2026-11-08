@@ -17,6 +17,7 @@ export type Project = {
 
 export type Experience = {
   org: string
+  badge?: string
   role: string
   start: string // "2025-06"
   end?: string // "present" | "2025-09"

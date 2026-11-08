@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { CornerDownLeft } from 'lucide-react'
 import { Experience } from '@/lib/types'
 
 interface TimelineProps {
@@ -31,7 +32,15 @@ export default function Timeline({ items }: TimelineProps) {
               </span>
             </div>
 
-            <p className="text-brand-500 font-medium">{item.org}</p>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="text-brand-500 font-medium">{item.org}</p>
+              {item.badge && (
+                <span className="text-brand-500 border-brand-500/20 bg-brand-500/10 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs font-medium">
+                  <CornerDownLeft className="h-3 w-3" aria-hidden="true" />
+                  {item.badge}
+                </span>
+              )}
+            </div>
 
             <ul className="mt-3 space-y-1">
               {item.bullets.map((bullet, bulletIndex) => (

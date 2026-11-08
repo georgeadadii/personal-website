@@ -13,7 +13,6 @@ import { SKILLS } from '@/data/skills'
 
 export default function HomePage() {
   const featuredProjects = PROJECTS.filter((project) => project.featured)
-  const recentExperience = EXPERIENCE.slice(0, 2)
 
   return (
     <>
@@ -34,7 +33,7 @@ export default function HomePage() {
         title="Experience"
         subtitle="Professional experience and internships"
       >
-        <Timeline items={recentExperience} />
+        <Timeline items={EXPERIENCE} />
       </Section>
 
       <Section
